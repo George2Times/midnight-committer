@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.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 }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Make changes (optional)
         run: |
