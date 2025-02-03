@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.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 }}
 
       - name: Make changes (optional)
         run: |
@@ -24,4 +24,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Daily auto-commit: $(date)" || exit 0
-          git push
+          git push origin master
