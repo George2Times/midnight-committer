@@ -24,4 +24,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Daily auto-commit: $(date)" || exit 0
-          git push origin master
+          git push https://github-actions:${{ secrets.PAT_TOKEN }}@github.com/George2Times/midnight-committer.git master
