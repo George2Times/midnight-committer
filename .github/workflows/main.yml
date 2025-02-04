@@ -20,8 +20,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "George2Times"
+          git config --global user.email "jerzy.dziubel@gmail.com"
           git add .
           git commit -m "Daily auto-commit: $(date)" || exit 0
           git push https://github-actions:${{ secrets.PAT_TOKEN }}@github.com/George2Times/midnight-committer.git master
